@@ -1,0 +1,293 @@
+//Imports
+@import "vars";
+@import "mixins";
+
+@import "components";
+
+/*********************/
+//General
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font_family;
+  line-height: 1;
+  font-weight: 400;
+  color: $black;
+  overflow-x: hidden;
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  height: 10rem;
+  padding: 0 4.8rem;
+  position: relative;
+  .logo {
+    height: 10rem;
+  }
+}
+
+//Navigation
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $black;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    color: $golden;
+  }
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: $white;
+    background-color: $golden;
+  }
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    background-color: $goldHover;
+  }
+}
+
+// Mobile navigation
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+//Hero section
+.section-hero {
+  background-color: $white;
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: $golden;
+  .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    .hero-description {
+      font-size: 2rem;
+      line-height: 1.1;
+      margin-bottom: 8.8rem;
+    }
+    .hero-img {
+      width: 100%;
+    }
+    .hero-img-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+//Reservation & Delivery
+.section-how {
+  padding: 9.6rem 0;
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+  .step-img-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-img {
+    width: 35%;
+  }
+}
+
+//Meals section
+.section-meals {
+  padding: 9.6rem 0;
+  background-color: $golden;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-color: $white;
+  .meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+    .meal-title {
+      font-size: 2.4rem;
+      color: $black;
+      font-weight: 600;
+      margin-bottom: 3.2rem;
+      text-align: center;
+    }
+    .meal-attributes {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .meal-attribute {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        .meal-icon {
+          height: 2.4rem;
+          width: 2.4rem;
+          color: $golden;
+        }
+      }
+    }
+  }
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-img {
+  width: 100%;
+}
+
+//About section
+.section-about {
+  padding: 6rem 0;
+  .feature-title {
+    font-size: 2.4rem;
+    color: $black;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+  .feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  .insta {
+    display: flex;
+    justify-content: center;
+    .insta_link {
+      text-decoration: none;
+      background-color: $black;
+      color: $white;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 1.6rem 3.2rem;
+      border-radius: 10px;
+      gap: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+//Location section
+
+.section-loc {
+  padding: 4.8rem 0 4.8rem 0;
+  background-color: $golden;
+  .loc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .address {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+//Footer
+.footer {
+  padding: 3rem 0;
+  border-top: 1px solid #ddd;
+  .grid--footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .logo-cal {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+  .logo {
+    height: 8rem;
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: $black;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: $black;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: $darkHover;
+}
+
+/////////////////
+/// Media queries
+@import "queries";

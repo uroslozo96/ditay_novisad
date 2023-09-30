@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font-->
+    <!--Ion Icon-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--Ion Icon-->
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--CSS-->
+    <title>DITAY</title>
+  </head>
+  <!--Body-->
+  <body>
+    <!--Header-->
+    <header class="header">
+      <img src="img/ditay/ditay-hero.svg" alt="logo-img" class="logo" />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about">O nama</a></li>
+          <li><a class="main-nav-link" href="#res">Rezervacije</a></li>
+          <li><a class="main-nav-link" href="#del">Dostava</a></li>
+          <li><a class="main-nav-link" href="#loc">Lokacija</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="menu/menu.pdf">Jelovnik</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Mobile navigation-->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline" id="menu_icon"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline" id="menu_close"></ion-icon>
+      </button>
+    </header>
+    <!--End of Header-->
+    <!--Main-->
+    <main>
+      <!--Hero section-->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Vaš put <br />
+              u kineske ukuse <br />
+              počinje ovde
+            </h1>
+            <p class="hero-description">
+              "Svaki tanjir je priča, svaki obrok je avantura, <br />
+              dođite i istražite svet kineskih ukusa s nama."
+            </p>
+            <a href="menu/menu.pdf" class="btn btn--full margin-right-sm">Jelovnik</a>
+            
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/ditay/ditay-hero.svg"
+              alt="hero-img"
+              class="hero-img"
+            />
+            
+          </div>
+        </div>
+      </section>
+      <!--End of Hero section-->
+      <!--Reservation and delivery section-->
+      <section class="section-how">
+        <div class="container">
+          <span class="subheading" id="res">Rezervacije</span>
+          <h2 class="heading-secondary">Putovanje kroz kineske arome</h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <!--Step 01-->
+          <div class="step-text-box">
+            <h3 class="heading-tertiary">Pozovi nas i rezerviši svoje mesto</h3>
+            <p class="step-description">
+            Rezervacija je prvi korak prema nezaboravnom iskustvu - Kontaktirajte nas danas!
+            </p>
+          </div>
+          <div class="step-img-box"  >
+            <img
+              src="img/phone/reservation.png"
+              alt="reservation-phone"
+              class="step-img"
+            />
+          </div>
+          <!--Step 02-->
+          <div class="step-img-box" id="del">
+            <img
+              src="img/phone/reservation.png"
+              alt="delivery-phone"
+              class="step-img"
+            />
+          </div>
+          <div class="step-text-box">
+            <h3 class="heading-tertiary" >Hrana na tvojoj adresi</h3>
+            <p class="step-description">
+              Ukusi Kine na vašem pragu! Dostavljamo ukuse do vaših vrata.
+            </p>
+          </div>
+      </section>
+      <!--End of Reservation and delivery section-->
+      <!--Meal section-->
+      <section class="section-meals">
+        <div class="container center-text">
+          <span class="subheading">Hrana</span>
+          <h2 class="heading-secondary">
+            Izdvajamo iz naše ponude
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img src="img/meals/Meal-one.webp" alt="meal-1" class="meal-img" />
+            <div class="meal-content">
+              <p class="meal-title">Piletina sa sampinjonima i indijskim orasima</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon name="flame-outline" class="meal-icon"></ion-icon
+                  ><span><strong>633</strong> kalorije</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="img/meals/Meal-second.webp" alt="meal-2" class="meal-img" />
+            <div class="meal-content">
+              <p class="meal-title">Svinjetina sa crnim kineskim gljivama</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon name="flame-outline" class="meal-icon"></ion-icon
+                  ><span><strong>704</strong> kalorije</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="img/meals/Meal-third.jpg" alt="meal-3" class="meal-img" />
+            <div class="meal-content">
+              <p class="meal-title">Junetina u ljutom secuan sosu sa povrcem</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon name="flame-outline" class="meal-icon"></ion-icon
+                  ><span><strong>689</strong> kalorija</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--End of Meal section-->
+    <!--Ditay section-->
+      <section class="section-about" id="about">
+        <div class="container center-text">
+          <span class="subheading">O nama</span>
+          <h2 class="heading-secondary">
+            Zašto DITAY
+          </h2>
+        </div>
+        <div class="container grid grid--4-cols">
+          <!--01-->
+          <div class="feature">
+            <p class="feature-title">Autentična kineska kuhinja</p>
+            <p class="feature-text">
+              Naš restoran nudi neponovljivu priliku da istražite autentične ukuse Kine. S bogatim jelovnikom koji obuhvata klasična jela i inovativne kreacije, svaka poseta postaje putovanje kroz kulinarsku tradiciju Kine.
+            </p>
+          </div>
+          <!--02-->
+          <div class="feature">
+            <p class="feature-title">Vrhunski sveži sastojci</p>
+            <p class="feature-text">
+              Naša restoranska atmosfera je jednako važna kao i naša hrana. Dođite i osetite toplinu i udobnost našeg prostora, gde ćete se osećati kao kod kuće dok uživate u obrocima s porodicom i prijateljima.
+            </p>
+          </div>
+          <!--03-->
+          <div class="feature">
+            <p class="feature-title">Topla i ugodna atmosfera</p>
+            <p class="feature-text">
+              Uz najviše standarde kvalitete, koristimo samo najsvežije sastojke u pripremi svakog jela. Naša posvećenost svežini osigurava da svaki zalogaj bude nezaboravan i zadovoljavajući.
+            </p>
+          </div>
+          <!--04-->
+          <div class="feature">
+            <p class="feature-title">Nezaboravan ukus Kine</p>
+            <p class="feature-text">
+              Naša kuhinja spaja tradiciju i inovaciju kako bismo vam pružili neverojatne ukuse Kine. Svaki obrok kod nas je prilika da doživite bogatstvo kineske kulinarske baštine i stvarate trajne uspomene.
+            </p>
+          </div>
+        </div>
+        <div class="insta">
+          <a href="https://www.instagram.com/ditay_novi.sad/" class="insta_link"><ion-icon name="logo-instagram"></ion-icon>ditay_novi.sad</a>
+        </div>
+      </section>
+    <!--End of Ditay section-->
+    <!--Location section-->
+      <section class="section-loc" id="loc">
+        <div class="container">
+          <div class="loc">
+          <address class="address">Pronađite nas na lokaciji <br> Avenija Garden Residence</address>
+            <div
+              class="loc-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.36215109982!2d19.821527175848434!3d45.24046904833922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b11ab5de37123%3A0xcbb2f6e679fec470!2sDitay!5e0!3m2!1ssr!2srs!4v1695895825476!5m2!1ssr!2srs" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+      </section>
+      <!--End of Location section-->
+    </main>
+    <!--End of Main part-->
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <!--Logo-->
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="img/ditay/ditay-black.jpg" alt="footer-logo" class="logo" />
+          </a>
+        </div>
+        <!---->
+        <div>
+          <p class="copyright">
+            Copyright &copy; 2023 <br> by Ditay Novi Sad <br> All rights reserved.
+          </p>
+        </div>
+        <!--Address-->
+        <div class="address-col">
+          <address class="contacts">
+            <p class="copyright">
+              Adresa : <br> Avenija Garden Residence
+            </p>
+          </address>
+        </div>
+        <div>
+          <p class="copyright">Kontaktirajte nas:</p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">021 30 38 600</a
+            ><br />
+            <a class="footer-link" href="mailto:hello@omnifood.com"
+              >ditayns@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--End of footer-->
+    <!--JavaScript-->
+    <script src="js/app.js"></script>
+  </body>
+  <!--End of body-->
+</html>
