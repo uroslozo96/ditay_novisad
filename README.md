@@ -3,7 +3,7 @@
 ![Design preview](./Ditay-preview.png)
 
 ## Welcome! 👋
-
+www.ditayns.com
 Thanks for checking out.
 
 ## Ditay Novi Sad , Chinese restaurant
